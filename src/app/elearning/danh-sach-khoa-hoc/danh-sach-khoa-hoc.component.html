@@ -1,0 +1,35 @@
+<div class="container">
+  <div class="row my-3 mt-3">
+    <div class="col-3 mb-3" *ngFor="let item of entities">
+      <div class="card mt-2" style="height: 400">
+        <img
+          class="card-img-top"
+          [src]="item.hinhAnh"
+          width="250"
+          height="200"
+          alt=""
+        />
+        <div class="card-body rounded overflow-hidden">
+          <h4 class="card-title h5">{{ item.tenKhoaHoc }}</h4>
+          <p class="card-text">{{ item.ngayTao }}</p>
+        </div>
+        <div class="card-footer d-flex justify-content-between">
+          <button
+            class="btn text-white w-50 rounded-0"
+            style="background : #3a559f"
+            (click)="navigate(item.maKhoaHoc)"
+          >
+            CHI TIẾT
+          </button>
+          <button
+            class="btn text-white w-50 rounded-0"
+            style="background :#df322f "
+            (click)="delete(item.maKhoaHoc)"
+          >
+            XÓA
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

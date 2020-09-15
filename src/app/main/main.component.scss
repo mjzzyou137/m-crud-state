@@ -1,0 +1,40 @@
+.bg {
+  background: white;
+}
+
+.header-top {
+  background-image: linear-gradient(to right, #df322f, #16428e);
+  width: 100%;
+  height: 44px;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  height: auto;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  background-color: #fff;
+  transition: all ease 0.3s;
+  box-shadow: 0 0 15px #d1d1d1;
+  margin-bottom: 100px;
+}
+
+.register {
+  border-color: #df322f !important;
+  a {
+    color: #df322f;
+  }
+}
+
+.login {
+  border-color: #312fa7 !important;
+  a {
+    color: black;
+  }
+}
+
+section {
+  padding-top: 115px;
+}

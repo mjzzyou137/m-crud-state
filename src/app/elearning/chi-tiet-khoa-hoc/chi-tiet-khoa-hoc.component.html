@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="row mt-5">
+    <div class="col-4">
+      <div class="card">
+        <img class="card-img-top img-fluid" [src]="entity.hinhAnh" alt="" />
+      </div>
+    </div>
+    <div class="col-8">
+      <div class="card-body pt-0">
+        <h3 class="card-title font-weight-bold">{{ entity.tenKhoaHoc }}</h3>
+        <div class="border-bottom border-dark"></div>
+        <p class="card-text">{{ entity.moTa }}</p>
+        <br />
+        <button
+          class="btn w-25 rounded-0 text-white"
+          style="background: #3a559f"
+        >
+          CHỈNH SỬA
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

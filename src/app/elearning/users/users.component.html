@@ -1,0 +1,58 @@
+<div class="container my-5">
+  <div class="row mb-2 justify-content-between px-3">
+    <h3></h3>
+    <button
+      class="btn rounded-0 text-white"
+      style="background: #3a559f"
+      [routerLink]="['/elearning/users/add']"
+    >
+      ADD
+    </button>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <table class="w-100" border="1">
+        <thead>
+          <th>
+            ID
+          </th>
+          <th>Name</th>
+          <th>Phone</th>
+          <th>Email</th>
+          <th>Gender</th>
+          <th>Action</th>
+        </thead>
+        <tbody>
+          <!-- variable sau khi get items về mặc định luôn là entities -->
+          <tr *ngFor="let item of entities">
+            <td>{{ item.id }}</td>
+            <td>{{ item.name }}</td>
+            <td>{{ item.phone }}</td>
+            <td>{{ item.email }}</td>
+            <td>{{ item.gender }}</td>
+            <td style="width: 170px">
+              <div class="w-100 px-2">
+                <button
+                  class="btn w-50 rounded-0 text-white"
+                  style="background: #3a559f"
+                  [routerLink]="['/elearning/users', item.id, 'edit']"
+                >
+                  EDIT
+                </button>
+
+                <!-- gọi hàm delete và truyền vào id -->
+                <button
+                  class="btn text-white w-50 rounded-0"
+                  style="background :#df322f "
+                  (click)="delete(item.id)"
+                >
+                  DELETE
+                </button>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
