@@ -1,7 +1,7 @@
 import { EntityName } from "./../entity-name";
 import { Metadata, HttpRequestMethod } from "m-crud-state";
 
-const baseUrl = "https://elearning0706.cybersoft.edu.vn/api";
+const baseUrl = "http://elearning0706.cybersoft.edu.vn/api";
 
 export const courseMetadata: Metadata = {
   entityName: EntityName.KhoaHoc,
