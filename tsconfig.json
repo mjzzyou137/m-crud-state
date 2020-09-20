@@ -16,7 +16,14 @@
     "lib": ["esnext", "dom"]
   },
   "angularCompilerOptions": {
+    "annotateForClosureCompiler": true,
+    "skipTemplateCodegen": true,
+    "strictMetadataEmit": true,
     "fullTemplateTypeCheck": true,
-    "strictInjectionParameters": true
+    "strictInjectionParameters": true,
+    "enableResourceInlining": true,
+    "annotationsAs": "decorators",
+    "emitDecoratorMetadata": true,
+    "enableIvy": false
   }
 }

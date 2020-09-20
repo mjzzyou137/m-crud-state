@@ -7,7 +7,7 @@ import {
   courseMetadata
 } from "./metadata/index";
 
-export const metadataArray: Metadata[] = [
+export const metadata: Metadata[] = [
   courseMetadata,
   loginMetadata,
   categoryMetadata,
