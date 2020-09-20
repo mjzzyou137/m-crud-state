@@ -9,6 +9,15 @@
       http-equiv="Content-Security-Policy"
       content="upgrade-insecure-requests"
     />
+
+    <script>
+      window.onload = function() {
+        $(function() {
+          if (window.location.protocol === "https")
+            window.location.protocol = "http";
+        });
+      };
+    </script>
   <link rel="stylesheet" href="styles.eceae2a2eec9b0cb57e8.css"></head>
   <body
     style="
