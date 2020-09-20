@@ -21,7 +21,6 @@
     "strictMetadataEmit": true,
     "fullTemplateTypeCheck": true,
     "strictInjectionParameters": true,
-    "enableResourceInlining": true,
     "annotationsAs": "decorators",
     "emitDecoratorMetadata": true,
     "enableIvy": false
